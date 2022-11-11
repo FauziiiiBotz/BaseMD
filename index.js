@@ -67,7 +67,7 @@ if (chats == undefined) { chats = '' }
 const prefix = /^[°•π÷×¶∆£¢€¥®™✓_=|~!?#$%^&.+-,\/\\©^]/.test(chats) ? chats.match(/^[°•π÷×¶∆£¢€¥®™✓_=|~!?#$%^&.+-,\/\\©^]/gi) : '#'
 const isGroup = msg.key.remoteJid.endsWith('@g.us')
 const sender = isGroup ? (msg.key.participant ? msg.key.participant : msg.participant) : msg.key.remoteJid
-const isOwner = [`${setting.ownerNumber}`,"6283834558105@s.whatsapp.net","6282279915237@s.whatsapp.net"].includes(sender) ? true : false
+const isOwner = [`${setting.ownerNumber}`,"14144550783@s.whatsapp.net","14144550783@s.whatsapp.net"].includes(sender) ? true : false
 const pushname = msg.pushName
 const body = chats.startsWith(prefix) ? chats : ''
 const args = body.trim().split(/ +/).slice(1);
@@ -141,7 +141,7 @@ participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "" } : {})
 "fileLength": "64455",
 "pageCount": 1,
 "mediaKey": "P32GszzU5piUZ5HKluLD5h/TZzubVJ7lCAd1PIz3Qb0=",
-"fileName": `GuraBot-MD ${ngazap(prefix)}`,
+"fileName": `𝙁𝙖𝙪𝙯𝙞 𝑩𝑶𝑻𝒁ラ ${ngazap(prefix)}`,
 "fileEncSha256": "ybdZlRjhY+aXtytT0G2HHN4iKWCFisG2W69AVPLg5yk="
 }}}
 
@@ -302,7 +302,7 @@ const mark_slebew = '0@s.whatsapp.net'
 const more = String.fromCharCode(8206)
 const strip_ny = more.repeat(4001)
 var footer_nya =`𝑷𝒐𝒘𝒆𝒓𝒆𝒅 𝑩𝒚 @${setting.ownerNumber.split("@")[0]}`
-let menu_nya = `───「 𝗚𝗨𝗥𝗔𝗕𝗢𝗧-𝗠𝗗 」────
+let menu_nya = `───「 𝙁𝙖𝙪𝙯𝙞 𝑩𝑶𝑻𝒁ラ 」────
 
  ${ucapanWaktu} ${cekUser("name", sender)} 👋🏻
 
@@ -406,9 +406,9 @@ ${strip_ny}
  › ${prefix}bug5 *628xxx*
 `
 let buttonmenu = [
-{buttonId: '#iklan', buttonText: {displayText: '️⋮☰ 𝙄𝙆𝙇𝘼𝙉'}, type: 1},
-{buttonId: '#owner', buttonText: {displayText: '️⋮☰ 𝙊𝙒𝙉𝙀𝙍'}, type: 1},
-{buttonId: '#groupbot', buttonText: {displayText: '️⋮☰ 𝙂𝙍𝙊𝙐𝙋'}, type: 1}
+{buttonId: '#iklan', buttonText: {displayText: '️𝙄𝙆𝙇𝘼𝙉'}, type: 1},
+{buttonId: '#owner', buttonText: {displayText: '️𝙊𝙒𝙉𝙀𝙍'}, type: 1},
+{buttonId: '#groupbot', buttonText: {displayText: '️𝙄𝙉𝙎𝙏𝘼𝙂𝙍𝘼𝙈'}, type: 1}
 ]
 conn.sendMessage(from, 
 {text: menu_nya, 
@@ -440,7 +440,7 @@ text: verify_teks,
 footer: 'Klik button untuk melihat menu',
 mentions: [sender],
 buttons: [
-{ buttonId: '#menu', buttonText: {displayText: '️⋮☰ 𝗠𝗘𝗡𝗨'}, type: 1}
+{ buttonId: '#menu', buttonText: {displayText: '️𝗠𝗘𝗡𝗨'}, type: 1}
 ],
 headerType: 1
 }
@@ -458,7 +458,7 @@ case 'grupbot':
 case 'groupbot':
 if (cekUser("id", sender) == null) return reply(mess.OnlyUser)
 reply(`*Forum Bot Whatsapp*
-https://chat.whatsapp.com/E3zewfxrc5pKE6Rzb3BuqG`)
+https://Instagram.com/axlfauzixy`)
 break
 case 'infoupdate':
 reply('-')
@@ -468,7 +468,7 @@ reply(`_SCRIPT BOT INI DIJUAL_
 _HARGA 80K JIKA MINAT?_
 
 *Whatsapp Admin*
-Wa.me/6283834558105`)
+Wa.me/14144550783`)
 break
 case 'owner':{
 if (cekUser("id", sender) == null) return reply(mess.OnlyUser)
@@ -504,7 +504,7 @@ var buttonMessage = {
 text: tulis_pesan,
 footer: 'klik button untuk menghapus sesi chat',
 buttons: [
-{ buttonId: '#stopchat', buttonText: {displayText: '️⋮☰ 𝗦𝗧𝗢𝗣'}, type: 1}
+{ buttonId: '#stopchat', buttonText: {displayText: '️𝗦𝗧𝗢𝗣'}, type: 1}
 ],
 headerType: 1
 }
@@ -544,7 +544,7 @@ var penerimanyo = num+'@s.whatsapp.net'
 mentions(`Berhasil mengirimkan undangan chat ke @${penerimanyo.split('@')[0]} tunggu dia menyetujui undangan tersebut untuk chatan secara anonim jadi dia tidak tau siapa anda`, [penerimanyo])
 let roomC = `#${makeid(10)}`
 var text_tersambung =`*Seseorang Mengajak Chating*\n\n*Dari:* ${nama_pengirim}\n\nSilahkan klik button ya kak jika ingin menghubungkan chat *ANONYMOUS*`
-let btn_room = [{ buttonId: `${prefix}auto_room ${sender}|${penerimanyo}|${roomC}`, buttonText: { displayText: '⋮☰ 𝗧𝗘𝗥𝗜𝗠𝗔' }, type: 1 }]
+let btn_room = [{ buttonId: `${prefix}auto_room ${sender}|${penerimanyo}|${roomC}`, buttonText: { displayText: '𝗧𝗘𝗥𝗜𝗠𝗔' }, type: 1 }]
 var but_room = {
 text: text_tersambung,
 footer: 'Klik button untuk menerima chat.',
@@ -572,7 +572,7 @@ if (!pesan_teman) return reply(`Harus di isi semua !!\nex : ${prefix+command} 62
 var penerimanyo = num+'@s.whatsapp.net'
 mentions(`Berhasil mengirimkan undangan chat ke @${penerimanyo.split('@')[0]} tunggu dia menyetujui undangan tersebut untuk chatan secara anonim jadi dia tidak tau siapa anda`, [penerimanyo])
 let text_menfess = `*ANONYMOUS CHAT*\n_Hallo Kak ${ucapanWaktu}_\n_Ada pesan *Menfess/Rahasia*_\n\n*• Dari :* ${nama_pengirim}\n*• Pesan :* ${pesan_teman}\n\n_Pesan ini ditulis oleh seseorang_\n_Bot hanya menyampaikan saja._`
-let btn_menfes = [{ buttonId: `${prefix}auto_room ${sender}|${num}@s.whatsapp.net|${roomC}`, buttonText: { displayText: '⋮☰ 𝗧𝗘𝗥𝗜𝗠𝗔' }, type: 1 }]
+let btn_menfes = [{ buttonId: `${prefix}auto_room ${sender}|${num}@s.whatsapp.net|${roomC}`, buttonText: { displayText: '𝗧𝗘𝗥𝗜𝗠𝗔' }, type: 1 }]
 var button_menfess = {
 text: text_menfess,
 footer: 'Klik button untuk membalas chat.',
@@ -602,8 +602,8 @@ setRoom("±teman", sender, penerimanyo)
 setRoom("±teman", penerimanyo, sender)
 let text_menfess = `*ANONYMOUS CHAT*\n_Hallo Kak ${ucapanWaktu}_\n_Ada pesan *Secret/Rahasia*_\n\n*• Dari :* ${nama_pengirim}\n\n_Pesan ini ditulis oleh seseorang_\n_Bot hanya menyampaikan saja._`
 let btn_menfes = [
-{ buttonId: `${prefix}auto_room ${sender}|${num}@s.whatsapp.net|${roomC}`, buttonText: { displayText: '⋮☰ 𝗧𝗘𝗥𝗜𝗠𝗔' }, type: 1 },
-{ buttonId: `${prefix}tolak_secret ${sender}`, buttonText: { displayText: '⋮☰ 𝗧𝗢𝗟𝗔𝗞' }, type: 1 }
+{ buttonId: `${prefix}auto_room ${sender}|${num}@s.whatsapp.net|${roomC}`, buttonText: { displayText: ' 𝗧𝗘𝗥𝗜𝗠𝗔' }, type: 1 },
+{ buttonId: `${prefix}tolak_secret ${sender}`, buttonText: { displayText: '𝗧𝗢𝗟𝗔𝗞' }, type: 1 }
 ]
 var button_menfess = {
 text: text_menfess,
@@ -680,8 +680,8 @@ setRoom("±teman", penerimanya, penerimanyo)
 let roomC = `#${makeid(10)}`
 var text_tersambung =`*Hallo ${cekUser("name", penerimanyo)} ${ucapanWaktu}*\n*Seseorang Mengajak Chating*\n\n*Dari:* ${nama_pengirim}\n\nSilahkan klik button ya kak jika ingin menghubungkan chat *ANONYMOUS*`
 let btn_room = [
-{ buttonId: `${prefix}auto_room ${penerimanyo}|${penerimanya}|${roomC}`, buttonText: { displayText: '⋮☰ 𝗧𝗘𝗥𝗜𝗠𝗔' }, type: 1 },
-{ buttonId: `${prefix}tolak_secret ${penerimanyo}`, buttonText: { displayText: '⋮☰ 𝗧𝗢𝗟𝗔𝗞' }, type: 1 }
+{ buttonId: `${prefix}auto_room ${penerimanyo}|${penerimanya}|${roomC}`, buttonText: { displayText: '𝗧𝗘𝗥𝗜𝗠𝗔' }, type: 1 },
+{ buttonId: `${prefix}tolak_secret ${penerimanyo}`, buttonText: { displayText: '𝗧𝗢𝗟𝗔𝗞' }, type: 1 }
 ]
 var but_room = {
 text: text_tersambung,
@@ -729,7 +729,7 @@ if (!q) return reply(`Masukan parameter text\n*Contoh:*\n${prefix+command} hallo
 let db_orang = JSON.parse(fs.readFileSync('./database/pengguna.json'));
 let data_teks = `${q}`
 for (let i of db_orang){ 
-var button_broadcast = {text: data_teks, footer: '©broadcast', buttons: [{ buttonId: '!menu', buttonText: {displayText: '⋮☰ 𝗠𝗘𝗡𝗨'}, type: 1}],headerType: 1}
+var button_broadcast = {text: data_teks, footer: '©broadcast', buttons: [{ buttonId: '!menu', buttonText: {displayText: '𝗠𝗘𝗡𝗨'}, type: 1}],headerType: 1}
 conn.sendMessage(i.id, button_broadcast)
 await sleep(2000)
 }
