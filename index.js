@@ -458,7 +458,7 @@ case 'grupbot':
 case 'groupbot':
 if (cekUser("id", sender) == null) return reply(mess.OnlyUser)
 reply(`*Forum Bot Whatsapp*
-https://Instagram.com/axlfauzixy`)
+https://chat.whatsapp.com/H1Bq00WkYh54vdw8dj4Kiy`)
 break
 case 'infoupdate':
 reply('-')
