@@ -408,7 +408,7 @@ ${strip_ny}
 let buttonmenu = [
 {buttonId: '#iklan', buttonText: {displayText: '️𝙄𝙆𝙇𝘼𝙉'}, type: 1},
 {buttonId: '#owner', buttonText: {displayText: '️𝙊𝙒𝙉𝙀𝙍'}, type: 1},
-{buttonId: '#groupbot', buttonText: {displayText: '️𝙄𝙉𝙎𝙏𝘼𝙂𝙍𝘼𝙈'}, type: 1}
+{buttonId: '#groupbot', buttonText: {displayText: '️𝙂𝙍𝙊𝙐𝙋'}, type: 1}
 ]
 conn.sendMessage(from, 
 {text: menu_nya, 
